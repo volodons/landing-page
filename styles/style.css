@@ -1,1 +1,104 @@
-/*# sourceMappingURL=style.css.map */
+.html {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(218, 242, 255) 100%);
+  max-width: 1920px;
+}
+
+.body {
+  font-family: Objective, sans-serif;
+  position: relative;
+}
+
+.header {
+  padding: 0 5rem;
+}
+
+.logo-and-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Objective, sans-serif;
+  font-size: 34px;
+  line-height: 35px;
+  margin-top: 1rem;
+  flex: 4 0 auto;
+}
+.logo--blue {
+  color: #4a99d3;
+}
+.logo--white {
+  color: #fff;
+  flex: 0 1 auto;
+  margin-top: 0;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex: 1 0 auto;
+  column-gap: 4rem;
+}
+
+.link--purple {
+  color: #260041;
+}
+.link--blue {
+  display: inline-block;
+  color: #4a99d3;
+  margin-top: 4rem;
+}
+.link:hover {
+  color: #4a99d3;
+}
+.link:link, .link:visited, .link:active {
+  text-decoration: none;
+}
+
+.header-heading {
+  color: #260041;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  width: 595px;
+  margin-top: 5rem;
+}
+
+.header-paragraph {
+  width: 636px;
+  line-height: 36px;
+  margin-bottom: 4rem;
+}
+
+.header-mockup-wrapper {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+}
+
+.header-mockup {
+  position: relative;
+}
+.header-mockup--medium {
+  z-index: 1;
+  right: -5rem;
+}
+.header-mockup--big {
+  z-index: 0;
+}
+
+.header-badges-wrapper {
+  display: flex;
+  justify-content: start;
+  column-gap: 1rem;
+}
+
+.header-google-badge,
+.header-apple-badge {
+  border-radius: 5px;
+}
+.header-google-badge:hover,
+.header-apple-badge:hover {
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px #878787;
+}/*# sourceMappingURL=style.css.map */

@@ -1,2 +1,124 @@
 @import "variables";
 @import "mixins";
+
+.html {
+  background: linear-gradient(
+    0deg,
+    rgba(255 255 255 / 100%) 0%,
+    rgba(255 255 255 / 100%) 90%,
+    rgba(218 242 255 / 100%) 100%
+  );
+  max-width: 1920px;
+}
+
+.body {
+  @include font;
+
+  position: relative;
+}
+
+.header {
+  padding: $global-padding;
+}
+
+.logo-and-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Objective, sans-serif;
+  font-size: 34px;
+  line-height: 35px;
+  margin-top: 1rem;
+  flex: 4 0 auto;
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--white {
+    color: $white;
+    flex: 0 1 auto;
+    margin-top: 0;
+  }
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex: 1 0 auto;
+  column-gap: 4rem;
+}
+
+.link {
+  &--purple {
+    color: $purple;
+  }
+
+  &--blue {
+    display: inline-block;
+    color: $blue;
+    margin-top: 4rem;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.header-heading {
+  color: $purple;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  width: 595px;
+  margin-top: 5rem;
+}
+
+.header-paragraph {
+  width: 636px;
+  line-height: 36px;
+  margin-bottom: 4rem;
+}
+
+.header-mockup-wrapper {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+}
+
+.header-mockup {
+  position: relative;
+
+  &--medium {
+    z-index: 1;
+    right: -5rem;
+  }
+
+  &--big {
+    z-index: 0;
+  }
+}
+
+.header-badges-wrapper {
+  display: flex;
+  justify-content: start;
+  column-gap: 1rem;
+}
+
+.header-google-badge,
+.header-apple-badge {
+  border-radius: 5px;
+
+  &:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px $gray;
+  }
+}
