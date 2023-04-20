@@ -339,7 +339,6 @@ body {
 .nav__column-4 {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
 }
 
 .nav__list {
