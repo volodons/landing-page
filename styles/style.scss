@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-.html {
+html {
   background: linear-gradient(
     0deg,
     rgba(255 255 255 / 100%) 0%,
@@ -11,7 +11,7 @@
   max-width: 1920px;
 }
 
-.body {
+body {
   @include font;
 
   position: relative;
@@ -287,26 +287,11 @@
 }
 
 .section-4 {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   padding-bottom: 10rem;
-
-  &::before {
-    content: url("../images/rectangles-brown.png");
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  &::after {
-    content: url("../images/rectangles-blue.png");
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
 }
 
 .footer-mockup {
@@ -395,7 +380,6 @@
 .nav__column-4 {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
 }
 
 .nav__list {

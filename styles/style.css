@@ -1,9 +1,9 @@
-.html {
+html {
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(218, 242, 255) 100%);
   max-width: 1920px;
 }
 
-.body {
+body {
   font-family: Objective, sans-serif;
   position: relative;
 }
@@ -256,24 +256,11 @@
 }
 
 .section-4 {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   padding-bottom: 10rem;
-}
-.section-4::before {
-  content: url("../images/rectangles-brown.png");
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.section-4::after {
-  content: url("../images/rectangles-blue.png");
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .footer-mockup {
@@ -352,7 +339,6 @@
 .nav__column-4 {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
 }
 
 .nav__list {
